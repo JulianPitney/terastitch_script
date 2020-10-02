@@ -60,6 +60,7 @@ for scan in scans:
         volout = "\"" + volumePath + "\\stitched\""
         volout_plugin = "\"TiledXY|3Dseries\""
         imout_format = "\"tif\""
-        command = "terastitcher --merge --projin=" + projin + " --volout=" + volout + " --volout_plugin=" + volout_plugin + " --imout_format=" + imout_format
+        resolution = "\"1\""
+        command = "terastitcher --merge --projin=" + projin + " --volout=" + volout + " --volout_plugin=" + volout_plugin + " --imout_format=" + imout_format + " --resolution=" + resolution
         os.system(command)
         print(command)
